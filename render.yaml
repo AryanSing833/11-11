@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: 1111-a-universe-called-us
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .

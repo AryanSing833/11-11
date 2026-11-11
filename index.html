@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>11:11 — A Universe Called Us</title>
+<meta name="theme-color" content="#09090F">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body class="locked">
+<canvas id="sky" aria-hidden="true"></canvas><div class="grain" aria-hidden="true"></div><div id="cur" aria-hidden="true"></div>
+
+<section id="intro" aria-label="Opening">
+ <button id="snd0" class="ghost" aria-pressed="false">Sound: off</button>
+ <div id="clk" class="clk" aria-live="polite">11:09 <small>PM</small></div>
+ <p id="il1" class="il">Somewhere between random conversations,<br>endless nonsense and unforgettable memories…</p>
+ <p id="il2" class="il">Someone became a very important part of my universe.</p>
+ <p id="il3" class="il big">For Mahima.</p>
+ <button id="enter" class="btn" hidden>Enter</button>
+</section>
+
+<header id="nav" hidden>
+ <a href="#hero" class="logo">11:11</a>
+ <button id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+ <nav id="menu"><a href="#story">Story</a><a href="#museum">Chat Museum</a><a href="#jokes">Inside Jokes</a><a href="#gallery">Polaroids</a><a href="#machine">Memory</a><a href="#letter">Letter</a><a href="#wish">Wish</a></nav>
+ <button id="mute" class="ghost" aria-pressed="false" aria-label="Mute or unmute music">♪ On</button>
+</header>
+
+<main id="main" hidden>
+<section id="hero"><div class="hero-in" id="heroIn">
+ <div class="moon" aria-hidden="true"></div>
+ <h1>Some people are memories.<br><em>Some people become a whole universe.</em></h1>
+ <p class="sub">Mahima Chotu × Aryan Singh</p>
+ <p class="cap">Est. August 2023. Still tolerating each other.</p>
+ <div class="stats"><div><b>8,345</b>messages</div><div><b>11 Aug 2023</b>first message</div><div><b>1,398</b>in Oct 2026 alone</div></div>
+ <a href="#story" class="scroll" aria-label="Scroll down"><span></span></a>
+</div></section>
+
+<section id="story"><h2 class="rv">Our Story</h2><p class="lead rv">Only what the chat actually says. Nothing invented.</p><ol id="tl" class="tl"></ol></section>
+
+<section id="museum"><h2 class="rv">The Chat Museum</h2><p class="lead rv">Real messages. Original spelling. Zero context.</p>
+ <div id="tabs" class="tabs" role="tablist"></div>
+ <div id="room" class="room" aria-live="polite"></div>
+ <button id="another" class="btn">Show me another conversation</button></section>
+
+<section id="jokes"><h2 class="rv">The Dictionary of Us</h2><p class="lead rv">Tap a card. Pretend you don’t understand.</p><div id="jg" class="jg"></div></section>
+
+<section id="gallery"><h2 class="rv">Evidence of Our Existence</h2><p class="lead rv">A few frames from our very real, very chaotic universe.</p><div id="pg" class="pg"></div></section>
+
+<section id="machine"><h2 class="rv">The Random Memory Machine</h2>
+ <div class="env" id="env"><div class="flap"></div><div class="paper" id="paper"><small id="mdate">11:11</small><div id="mbody" class="mbody"></div></div><div class="front"></div></div>
+ <button id="open" class="btn">Open a random memory</button></section>
+
+<section id="letter"><h2 class="rv">Dear Mahima,</h2><div class="sheet"><p id="tw" aria-live="off"></p><p id="twfull" class="sr"></p></div></section>
+
+<section id="wish"><h2 class="rv">Make a wish at 11:11.</h2>
+ <button id="wishBtn" class="orb" aria-label="Make a wish"><span>11:11</span></button>
+ <div id="wishOv" class="wishov" hidden><canvas id="con"></canvas><p id="w1"></p><p id="w2"></p><button id="wclose" class="ghost">Close</button></div></section>
+
+<section id="end"><p class="endl">To more random plans.<br>More terrible jokes.<br>More food.<br>More chai.<br>More memories.<br>And many more years of tolerating each other.</p>
+ <div class="bigclk">11:11</div><p class="made">Made with love, madness and a questionable amount of screen time.</p><p class="sign">— Aryan</p>
+ <button id="restart" class="btn">Restart</button></section>
+</main>
+
+<div id="lb" class="lb" hidden role="dialog" aria-modal="true" aria-label="Photo"><button id="lbx" class="ghost">Close ✕</button><div id="lbc"></div></div>
+<script src="js/memories.js"></script><script src="js/main.js"></script>
+</body></html>
